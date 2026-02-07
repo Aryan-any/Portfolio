@@ -1,0 +1,13 @@
+SERVER OUT: 
+> aryan-portfolio-vite@1.0.0 preview
+> vite preview --port 4444
+
+
+SERVER OUT: Port 4444 is in use, trying another one...
+
+SERVER OUT:   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4445[22m/[39m
+
+SERVER OUT:   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.16.0.2:[1m4445[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.81.96.126:[1m4445[22m/[39m
+
+SERVER OUT: Terminate batch job (Y/N)? 
