@@ -24,6 +24,23 @@ npm run build
 3.  **Uncheck** "Block all public access" (we need CloudFront to access it, or public if hosting directly).
     *   *Professional Tip*: Keep it private and use a CloudFront Origin Access Policy (OAC) for security.
 4.  Upload the contents of your `dist/` folder to the bucket root.
+5.  **Important**: Go to the **Permissions** tab > **Bucket policy** > **Edit**.
+    *   Paste the following JSON to make your site publicly readable:
+    ```json
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "PublicReadGetObject",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::aryan-website-portfolio/*"
+            }
+        ]
+    }
+    ```
+    *   Change `aryan-website-portfolio` if your bucket name is different.
 
 ### 3. CloudFront Setup (CDN & HTTPS)
 1.  Go to **AWS Console > CloudFront**.
@@ -43,9 +60,9 @@ npm run build
 To automate this, add these secrets to your GitHub Repo (`Settings > Secrets`):
 *   `AWS_ACCESS_KEY_ID`
 *   `AWS_SECRET_ACCESS_KEY`
-*   `AWS_S3_BUCKET`: 'aryan-website-portfolio'
+*   `AWS_S3_BUCKET`
 
-*   `AWS_DISTRIBUTION_ID` (for cache invalidation): E3AHV232FCDU3Y
+*   `AWS_DISTRIBUTION_ID` (for cache invalidation)
 
 ### 5. How to Get Your Secrets (Step-by-Step for New Users)
 

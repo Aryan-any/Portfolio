@@ -1,9 +1,11 @@
 version: '3.8'
 
 services:
-  portfolio:
-    build: .
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8080:80"
-    container_name: aryan-portfolio
+    container_name: aryan-portfolio-prod
     restart: always
