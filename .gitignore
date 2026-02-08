@@ -119,3 +119,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Verification Artifacts
+preview_verification_*.png
