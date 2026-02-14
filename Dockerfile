@@ -1,10 +1,12 @@
 # Stage 1: Build
-FROM node:20-alpine as build
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Install dependencies (cache optimized)
+# Copy package files
 COPY package.json package-lock.json ./
+
+# Install dependencies (frozen lockfile for stability)
 RUN npm ci
 
 # Copy source code
@@ -16,11 +18,11 @@ RUN npm run build
 # Stage 2: Serve
 FROM nginx:alpine
 
-# Copy build output from Stage 1
-COPY --from=build /app/dist /usr/share/nginx/html
+# Copy built assets from builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Copy custom Nginx config
-COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+# Copy custom Nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80
 EXPOSE 80

@@ -23,7 +23,7 @@ export const config: {
 } = {
     personalDetails: {
         name: "ARYAN MISHRA",
-        role: "AI Researcher",
+        role: " Developer",
         education: "IIT Roorkee",
         location: "New Delhi, India",
         email: "mishraaryanm@gmail.com",
@@ -32,8 +32,8 @@ export const config: {
         // twitter: "https://twitter.com", // Uncomment when active
         // instagram: "https://instagram.com", // Uncomment when active
         bio: {
-            short: "Bridging the gap between theoretical research and practical engineering.",
-            long: "I am a final year Electronics and Communication Engineering student at IIT Roorkee, driven by a relentless curiosity for Artificial Intelligence. I specialize in building software that thinks—from fine-tuning Multi-Modal LLMs to deploying defense-grade Computer Vision systems."
+            short: "Building agentic, multimodal AI systems from research to production.",
+            long: "I’m Aryan Mishra, a final-year Electronics and Communication Engineering student at IIT Roorkee. I design and build intelligent systems that go beyond models—multi-agent architectures, multimodal LLM pipelines, and production-ready AI applications. From RAG systems and tool-using agents to Dockerized deployments on AWS, I focus on turning cutting-edge AI research into scalable, real-world products."
         },
         resume: "/resume.pdf"
     },
@@ -43,25 +43,25 @@ export const config: {
             company: "IIT Roorkee",
             position: "Research Intern",
             period: "May 2025 - July 2025",
-            description: "Built a defence-grade YOLOv8 pipeline using Python, PyTorch, and OpenCV. Scaled dataset to 1500+ images using super-resolution, achieving 12% boost in detection. Fine-tuned models for aircraft, runways, and hangars with terrain-robust inference.",
+            description: "Built a defense-grade computer vision pipeline using YOLOv8, PyTorch, and OpenCV for aerial surveillance applications. Expanded and enhanced a 1500+ image dataset with super-resolution and augmentation, improving detection accuracy by 12%. Fine-tuned models for aircraft, runways, and hangars, focusing on robust real-world inference and reliable deployment performance.",
         },
         {
             company: "Paragon IT Services",
             position: "Analyst Intern",
             period: "Nov 2024 - Jan 2025",
-            description: "Automated complex data workflows using Python, reducing processing time by 20%. Built interactive dashboards with Plotly and Dash.",
+            description: "Automated data workflows using Python, reducing processing time by 20%. Developed structured validation and reporting systems and built interactive dashboards with Plotly and Dash to support real-time analytics and data-driven decisions.",
         },
         {
             company: "NCC, IIT Roorkee",
             position: "Deputy General Secretary",
             period: "March 2023 - April 2025",
-            description: "Coordinated over 420 cadets and executed 15+ key initiatives. Headed a team of 57 individuals under 6 verticals.",
+            description: "Led operations for 420+ cadets and executed 15+ major institutional initiatives. Managed a 57-member team across 6 verticals, driving coordination, accountability, and leadership development at scale.",
         },
         {
             company: "Hostel Council, IIT Roorkee",
             position: "Chief Developer",
             period: "Aug 2023 - June 2024",
-            description: "Led the design and development of the Married Hostel App, handling full-stack implementation and launch.",
+            description: "Led the end-to-end development of the Married Hostel App, handling system design, backend architecture, API integration, and deployment. Built a scalable, maintainable application focused on structured data management and smooth user experience.",
         }
     ],
 
@@ -129,15 +129,21 @@ export const config: {
     skills: {
         develop: {
             title: "AI ENGINEER",
-            description: "Pushing boundaries of Intelligent Systems",
-            details: "Bridging the gap between theoretical research and practical engineering. From building & scaling Multi-Modal LLMs to deploying production ready AI systems.",
-            tools: ["Python", "PyTorch", "TensorFlow", "OpenCV", "LangChain", "LLMs", "RAG", "GenAI"]
+            description: "Building Scalable, Intelligent Systems",
+            details: "Designing AI that moves beyond notebooks. Specializing in Multi-Agent Systems, RAG pipelines, and high-performance Computer Vision applications closer to production.",
+            tools: ["Python", "PyTorch", "OpenAI", "LangChain", "Ollama", "HuggingFace", "CUDA"]
+        },
+        data: {
+            title: "DATA ANALYST",
+            description: "Turning Raw Data into Actionable Intelligence",
+            details: "Architecting end-to-end data pipelines for critical insights. Expertise in scraping unstructured data, statistical modeling, and building interactive dashboards for real-time decision-making.",
+            tools: ["Pandas", "NumPy", "SQL", "Plotly", "Scikit-learn", "Tableau"]
         },
         design: {
             title: "FULL-STACK ENGINEER",
-            description: "Scalable & Modern Web Systems",
-            details: "Building robust, production-ready applications. EXPERTISE in modern web stacks, cloud infrastructure, and system design.",
-            tools: ["Next.js", "React", "TypeScript", "FastAPI", "Docker", "SQL", "Git", "AWS"]
+            description: "Architecting Modern Web Ecosystems",
+            details: "Building robust, cloud-native web applications. Expertise in frontend performance optimization, microservices architecture, and secure, containerized deployments.",
+            tools: ["Next.js", "TypeScript", "FastAPI", "Docker", "AWS", "PostgreSQL", "Redis", "Figma"]
         },
         techStack: [
             // Row 1: The Heavy Hitters (12 items) - AI, Core, & Compute
