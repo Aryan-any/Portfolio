@@ -96,11 +96,16 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>{config.personalDetails.name}</span>
+              Let's build <br /> something <span>together</span>
             </h2>
-            <h5>
-              <MdCopyright /> {new Date().getFullYear()}
-            </h5>
+            <div className="contact-footer">
+              <h5>
+                <MdCopyright /> {new Date().getFullYear()} {config.personalDetails.name}
+              </h5>
+              <p className="disclaimer">
+                Designed for educational purposes. Inspired by the open-source community.
+              </p>
+            </div>
           </div>
         </div>
       </div>

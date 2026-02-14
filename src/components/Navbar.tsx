@@ -70,13 +70,6 @@ const Navbar = () => {
         <a href="/#" className="navbar-title" data-cursor="disable">
           {config.personalDetails.name}
         </a>
-        <a
-          href={`mailto:${config.personalDetails.email}`}
-          className="navbar-connect"
-          data-cursor="disable"
-        >
-          {config.personalDetails.email}
-        </a>
         <ul>
           <li>
             <a data-href="#about" href="#about">
