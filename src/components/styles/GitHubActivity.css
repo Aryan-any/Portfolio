@@ -1,0 +1,134 @@
+.github-activity-section {
+    width: 100%;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.github-activity-container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.github-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.github-header h3 {
+    font-size: 2rem;
+    color: var(--accentColor);
+    margin-bottom: 0.5rem;
+}
+
+.github-header p {
+    color: #888;
+    font-size: 1rem;
+}
+
+.github-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.github-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s, border-color 0.3s, background 0.3s;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.github-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accentColor);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.repo-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.repo-name svg {
+    color: var(--accentColor);
+}
+
+.card-time {
+    font-size: 0.8rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+.commit-message {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 0.8rem;
+}
+
+.repo-lang {
+    font-size: 0.8rem;
+    color: var(--accentColor);
+    background: rgba(168, 85, 247, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.view-repo {
+    font-size: 0.8rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .github-activity-container {
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+    .github-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .github-grid {
+        grid-template-columns: 1fr;
+    }
+}

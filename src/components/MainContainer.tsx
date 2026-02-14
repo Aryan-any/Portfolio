@@ -9,6 +9,7 @@ import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
 import TechStackNew from "./TechStackNew";
+import GitHubActivity from "./GitHubActivity";
 import CallToAction from "./CallToAction";
 import setSplitText from "./utils/splitText";
 
@@ -37,6 +38,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       <SocialIcons />
       {!isMobile && children}
       <Landing />
+      <GitHubActivity />
       <About />
       <WhatIDo />
       <Career />
