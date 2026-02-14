@@ -1,54 +1,85 @@
-# 🚀 Portfolio Website
+# ⚡ 3D Interactive Portfolio
 
-A high-performance, interactive 3D portfolio website built with React, Three.js, and GSAP.
+> "Bridging the gap between theoretical research and practical engineering."
+
+A high-performance, immersive 3D portfolio website built with modern web technologies. This project showcases my work as an AI Researcher through interactive 3D elements, smooth scroll animations, and a responsive design system.
 
 ## 🌟 Features
-- **3D Interaction**: Immersive 3D elements powered by Three.js.
-- **Smooth Animations**: High-performance animations using GSAP and Lenis.
-- **Dynamic Content**: All text and data are managed via a single configuration file.
-- **Responsive Design**: Fully optimized for all devices.
 
-## 🛠️ How to Edit Content
-All the text, projects, and skills on the website are managed in **one file**:
-👉 `src/config.ts`
+*   **3D Experience**: Powered by **Three.js** (`@react-three/fiber`) for immersive visuals.
+*   **High-Perf Animations**: **GSAP** and **Lenis** for buttery smooth scrolling and interactions.
+*   **Config-Driven**: Entire content (bio, skills, projects) managed via a single `config.ts` file.
+*   **Modern Stack**: Built with **React 18**, **TypeScript**, and **Vite**.
+*   **Dockerized**: Fully containerized with Nginx for consistent deployment.
+*   **CI/CD**: Automated deployment pipeline to AWS S3 & CloudFront via GitHub Actions.
 
-### 1. Personal Details (Bio, Links)
-Edit the `personalDetails` object:
-```typescript
-personalDetails: {
-    name: "YOUR NAME", // Top left logo
-    role: "YOUR ROLE", // Hero section text
-    bio: {
-        short: "Your short intro...",
-        long: "Your detailed bio..."
-    },
-    email: "your@email.com",
-    // ...
-}
-```
+---
 
-### 2. Experience & History
-Edit the `experiences` array. You can add as many as you want.
+## 🛠️ Tech Stack
 
-### 3. Projects
-Edit the `projects` array.
-*   **Images**: Put your project screenshots in the `public/images/` folder and reference them like `/images/my-project.png`.
+This project is built on a solid foundation of cutting-edge tools:
 
-### 4. Skills & Tech Stack
-Edit the `skills` object.
-*   **Icons**: We use URLs from [DevIcon](https://devicon.dev/). Just copy the SVG URL for any new tool you want to add.
+*   **Core**: React, TypeScript, Vite
+*   **3D & Graphics**: Three.js, React Three Fiber, React Three Drei
+*   **Animation**: GSAP (GreenSock), Lenis Scroll, Framer Motion
+*   **Styling**: Tailwind CSS, PostCSS
+*   **Deployment**: Docker, AWS (S3 + CloudFront), GitHub Actions
 
-## 🎨 Design Credits
-Original Design Concept by: **[Insert Designer Name Here]**
-*   Portfolio: [Link to Portfolio]
-*   *Please respect the original designer's work by keeping this credit.*
+---
 
-## 🚀 Deployment
-This project is configured for **AWS S3 + CloudFront**.
-See [AWS_DEPLOYMENT.md](./AWS_DEPLOYMENT.md) for full instructions.
+## 🎨 Inspiration & Credits
 
-## 💻 Local Development
+This project was built by **Aryan Mishra**, taking heavy design and code inspiration from the open-source community.
+
+*   **Development**: Re-engineered and customized by Aryan Mishra to include a dynamic configuration system (`config.ts`) and scalable AWS infrastructure.
+
+*I believe in giving credit where it is due. If you are the original author of the reference design, please feel free to contact me!*
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+*   Node.js (v18 or higher)
+*   npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Aryan-any/Portfolio.git
+    cd Portfolio
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
+    Open `http://localhost:5173` to view it in the browser.
+
+---
+
+## 📦 Deployment
+
+### Docker (Local Production)
+To test the production build locally using Docker:
+
 ```bash
-npm install
-npm run dev
+docker-compose up --build
 ```
+This serves the app on `http://localhost:8080`.
+
+### AWS CloudFront
+The project is set up to deploy to AWS automatically via GitHub Actions.
+
+---
+
+## 📄 License
+
+This project is open source. [Please feel free to use it for personal learning.]

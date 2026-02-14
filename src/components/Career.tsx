@@ -28,7 +28,7 @@ const Career = () => {
                   <h4>{exp.position}</h4>
                   <h5>{exp.company}</h5>
                 </div>
-                <h3>{getDisplayYear(exp.period)}</h3>
+                <h5>{getDisplayYear(exp.period)}</h5>
               </div>
               <p>{exp.description}</p>
             </div>
